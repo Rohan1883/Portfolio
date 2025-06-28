@@ -6,8 +6,8 @@ const projects = [
     id: 1,
     title: "StudySpark",
     description: "A platform for students to buy online courses.",
-    image: "/projects/project1.png",
-    tags: ["React", "Node", "Expeess", "MongoDB"],
+    image: "/studyspark.jpg",
+    tags: ["React", "Node", "Express", "MongoDB"],
     demoUrl: "#",
     githubUrl: "https://github.com/Rohan1883/StudySpark",
   },
@@ -16,7 +16,7 @@ const projects = [
     title: "Sorting Visualizer",
     description:
       "A Sorting Visualizer to visualize various sorting algorithms used in DSA.",
-    image: "#",
+    image: "/sorting-visualizer.jpg",
     tags: ["HTML", "CSS", "JavaScript"],
     demoUrl: "#",
     githubUrl: "https://github.com/Rohan1883/Sorting-Visualizer",
@@ -26,7 +26,7 @@ const projects = [
     title: "Brain Tumour Detection",
     description:
       "A machine learning project to detect brain tumours using MRI images.",
-    image: "/projects/project3.png",
+    image: "/brain-tumor-detection.jpg",
     tags: ["Python", "TensorFlow", "OpenCV"],
     demoUrl: "#",
     githubUrl: "https://github.com/Rohan1883/Brain-Tumor-Detection",
@@ -58,6 +58,7 @@ export const ProjectsSection = () => {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
                 />
               </div>
 

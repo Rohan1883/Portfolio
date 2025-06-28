@@ -2,7 +2,8 @@ import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
-export const ThemeToggle = () => {
+// Now accepts a className prop to allow for flexible styling from the parent
+export const ThemeToggle = ({ className }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -11,6 +12,7 @@ export const ThemeToggle = () => {
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
     } else {
+      // Default to light theme if nothing is stored
       localStorage.setItem("theme", "light");
       setIsDarkMode(false);
     }
@@ -31,10 +33,13 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
+      // The component is now just a simple button, ready to be placed anywhere.
       className={cn(
-        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outlin-hidden"
+        "p-2 rounded-full transition-colors duration-300",
+        "hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+        className // Allows for additional classes
       )}
+      aria-label="Toggle theme"
     >
       {isDarkMode ? (
         <Sun className="h-6 w-6 text-yellow-300" />

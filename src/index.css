@@ -126,6 +126,10 @@
   @apply relative;
   text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
+/* ADD THIS NEW UTILITY CLASS */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70;
+}
 
 @utility card-hover {
   @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
