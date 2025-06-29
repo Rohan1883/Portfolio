@@ -6,7 +6,7 @@ const experienceData = [
     id: 1,
     role: "Software Development Intern",
     company: "Srijan Technologies(A Material Plus Company)",
-    duration: "April 2024 - Present",
+    duration: "April 2025 - Present",
     description: [
       "Developed backend microservices for an e-commerce platform using Spring Boot.",
       "Explored and integrated third-party tools like Coveo AI and Contentstack.",

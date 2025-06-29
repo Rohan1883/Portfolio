@@ -16,15 +16,17 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              I’m a Computer Science student at NSUT with a focus on Artificial Intelligence. 
-              I enjoy building smart, scalable, and user-friendly applications,
-              ranging from e-commerce systems to intelligent transport solutions.
+              I’m a Computer Science student at NSUT with a focus on Artificial
+              Intelligence. I enjoy building smart, scalable, and user-friendly
+              applications, ranging from e-commerce systems to intelligent
+              transport solutions.
             </p>
 
             <p className="text-muted-foreground">
-              Skilled in full-stack development, machine learning, and problem-solving, 
-              I'm always exploring new technologies and pushing my limits. 
-              Outside of tech, I'm passionate about music, sports, and continuous learning.
+              Skilled in full-stack development, machine learning, and
+              problem-solving, I'm always exploring new technologies and pushing
+              my limits. Outside of tech, I'm passionate about music, sports,
+              and continuous learning.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
