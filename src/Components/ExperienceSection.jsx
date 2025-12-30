@@ -4,16 +4,27 @@ import { Briefcase } from "lucide-react";
 const experienceData = [
   {
     id: 1,
+    role: "Software Developer (Full-Time)",
+    company: "Srijan Technologies (A Material Plus Company)",
+    duration: "Nov 2025 - Present",
+    description: [
+      "Worked on Azure cloud services to support scalable and secure backend systems.",
+      "Implemented and managed user management workflows, including authentication and authorization.",
+      "Integrated and configured Braze for customer engagement, lifecycle campaigns, and analytics.",
+      "Collaborated with cross-functional teams to deliver production-grade features in an agile environment.",
+    ],
+  },
+  {
+    id: 2,
     role: "Software Development Intern",
-    company: "Srijan Technologies(A Material Plus Company)",
-    duration: "April 2025 - Present",
+    company: "Srijan Technologies (A Material Plus Company)",
+    duration: "April 2025 - Oct 2025",
     description: [
       "Developed backend microservices for an e-commerce platform using Spring Boot.",
       "Explored and integrated third-party tools like Coveo AI and Contentstack.",
-      "Participated in agile ceremonies, including daily stand-ups, sprint planning, and retrospectives.",
+      "Participated in agile ceremonies including daily stand-ups, sprint planning, and retrospectives.",
     ],
   },
-  // Add more experience items here
 ];
 
 export const ExperienceSection = () => {
@@ -43,7 +54,9 @@ export const ExperienceSection = () => {
               {/* Content Card */}
               <div
                 className={`w-full md:w-1/2 p-6 bg-card rounded-lg shadow-xs card-hover ${
-                  index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12 md:ml-auto md:text-left"
+                  index % 2 === 0
+                    ? "md:pr-12 md:text-right"
+                    : "md:pl-12 md:ml-auto md:text-left"
                 }`}
               >
                 <h3 className="text-xl font-semibold mb-1">{item.role}</h3>
@@ -51,7 +64,11 @@ export const ExperienceSection = () => {
                 <p className="text-sm text-muted-foreground mb-4">
                   {item.duration}
                 </p>
-                <ul className={`list-disc list-inside space-y-1 text-muted-foreground ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
+                <ul
+                  className={`list-disc list-inside space-y-1 text-muted-foreground ${
+                    index % 2 === 0 ? "md:text-right" : "md:text-left"
+                  }`}
+                >
                   {item.description.map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}
