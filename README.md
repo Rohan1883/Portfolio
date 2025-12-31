@@ -4,7 +4,7 @@
 
 Welcome to the repository for my personal portfolio website. This project is a modern, responsive, and animated single-page application built to showcase my skills, experience, and projects as a software engineer.
 
-**[View Live Demo](https://[your-live-url.com])**
+**[View Live Demo](https://portfolio-rohankr1883.vercel.app)**
 
 ---
 
@@ -83,6 +83,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) fi
 
 ## Contact
 
-Rohan Mishra - [@LinkedIn](https://www.linkedin.com/in/rohankr1883) - rohankr1808@gmail.com
+Rohan Mishra - [LinkedIn](https://www.linkedin.com/in/rohankr1883)  [Mail](rohankr1808@gmail.com)
 
 Project Link: [https://github.com/rohan1883/Portfolio](https://github.com/rohan1883/Portfolio)
